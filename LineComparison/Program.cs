@@ -1,3 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine(" Welcome To Line Comparision ");
-Console.ReadKey();
+﻿using LineComparison;
+
+
+        
+        
+            Console.WriteLine(" Welcome To Line Comparision ");
+#pragma warning disable IDE0090 // Use 'new(...)'
+LineComparisonProblem problem = new LineComparisonProblem();
+problem.FindLength();
+
+Console.ReadKey();          
+    
+    
+
+
+
