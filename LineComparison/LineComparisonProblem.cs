@@ -14,7 +14,12 @@ namespace LineComparison
             int x2;
             int y1;
             int y2;
-            int length;
+            int x3;
+            int y3;
+            int x4;
+            int y4;
+            int length1;
+            int length2;
 
             Console.WriteLine("Enter the coordinates for line number 1");
             Console.WriteLine();
@@ -28,8 +33,29 @@ namespace LineComparison
             Console.WriteLine("Enter Value of y2");
             y2 = Convert.ToInt32(Console.ReadLine());
 
-            length =(int) Math.Sqrt(Math.Pow((x2 - x1), 2) * (int)Math.Pow((y2 - y1), 2)); 
-            Console.WriteLine("Length of line is:: " + length);
+            Console.WriteLine("Enter the coordinates for line number 2");
+            Console.WriteLine();
+
+            Console.WriteLine("Enter Value of x3");
+            x3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Value of y3");
+            y3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Value of x4");
+            x4 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Value of y4");
+            y4 = Convert.ToInt32(Console.ReadLine());
+
+            length1 =(int) Math.Sqrt(Math.Pow((x2 - x1), 2) * (int)Math.Pow((y2 - y1), 2)); 
+            Console.WriteLine("Length of line is:: " + length1);
+
+            length2 = (int)Math.Sqrt(Math.Pow((x4 - x3), 2) * (int)Math.Pow((y4 - y3), 2));
+            Console.WriteLine("Length of line is:: " + length2);
+
+
+            if (length1 == length2)
+                Console.WriteLine(" lines are of equal Length");
+            else
+                Console.WriteLine(" lines are of different Length");
 
         }
     }
